@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation Details</title>
+    <link rel="stylesheet" href="css/Accom.css">
+</head>
+<body>
+    <header>
+        <h1>Accommodation Details</h1>
+        <nav>
+            <ul>
+                <li><a href="Accom.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="AccomDetails">
+        <h2 id="name">Accommodation Name</h2>
+        <p id="location">Location: </p>
+        <p id="price">Price: </p>
+        <div id="photos">
+            <img id="main-photo" src="" alt="Main photo">
+            <div id="photo-gallery" class="horizontal-scroll">
+                <!-- Additional photos will be populated here -->
+            </div>
+        </div>
+        <div id="reviews">
+            <h3>Reviews</h3>
+            <ul id="review-list">
+                <!-- Reviews will be populated here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="review-form-section">
+        <h3>Submit Your Review</h3>
+        <form id="review-form">
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="review-text">Review:</label>
+            <textarea id="review-text" name="review-text" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Student Accommodations</p>
+    </footer>
+
+    <script src="js/AccomDetails.js"></script>
+</body>
+</html>
